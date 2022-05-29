@@ -3,8 +3,6 @@ package com.example.amcef.posts.data;
 import com.example.amcef.posts.web.bodies.PostRequest;
 import lombok.*;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Getter
@@ -14,7 +12,6 @@ import javax.persistence.Id;
 @AllArgsConstructor
 public class Post {
     @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private Integer userId;
     private String title;

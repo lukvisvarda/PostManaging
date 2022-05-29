@@ -1,7 +1,5 @@
 package com.example.amcef.posts.logic;
 
-
-
 import com.example.amcef.exception.NotFoundException;
 import com.example.amcef.posts.data.Post;
 import com.example.amcef.posts.web.bodies.PostRequest;

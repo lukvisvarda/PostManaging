@@ -5,7 +5,6 @@ import com.example.amcef.users.Company;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Getter
 @Setter
 public class User {

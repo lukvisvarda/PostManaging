@@ -63,7 +63,7 @@ public class PostService implements IPostService {
             String url = "https://jsonplaceholder.typicode.com/posts/" + id;
             try {
                 ResponseEntity<Post> response = restTemplate.exchange(url, HttpMethod.GET, null, Post.class );
-//                this.repository.save(Objects.requireNonNull(response.getBody()));
+//                this.repository.save(Objects.requireNonNull(response.getBody())); // saving posts that has been gotten by external api
                 return response.getBody();
             } catch (HttpClientErrorException e) {
                 throw new NotFoundException();
